@@ -21,7 +21,7 @@ client.on('message', ( message ) => {
 
   if (message.attachments.size <= 0) {
     message.delete();
-    msg.channel.send("**! هذا الروم مخصص للصور فقط :angry:**")
+    message.channel.send("**! هذا الروم مخصص للصور فقط :angry:**")
     .then(msg => {
       setTimeout(() => {
         msg.delete();
@@ -35,7 +35,7 @@ client.on('message', ( message ) => {
     console.log(filename);
     if(!types.some( type => filename.endsWith(type) )) {
       message.delete();
-      msg.channel.send("**! هذا الروم مخصص للصور فقط :angry:**")
+      message.channel.send("**! هذا الروم مخصص للصور فقط :angry:**")
       .then(msg => {
         setTimeout(() => {
           msg.delete();
